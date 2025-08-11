@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', function() {
         skipLink.href = '#home';
         skipLink.textContent = 'Skip to main content';
         skipLink.className = 'skip-link sr-only';
-        skipLink.style.cssText = `
+        skipLink.main.cssText = `
             position: absolute;
             top: -40px;
             left: 6px;
