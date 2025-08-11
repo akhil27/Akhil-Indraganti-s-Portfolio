@@ -7,30 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Fixed Header Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h2>Akhil Indraganti</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-
     <!-- Enhanced Hero Section with Photo -->
     <section id="home" class="hero">
         <div class="container">
@@ -38,7 +14,7 @@
                 <div class="hero-content">
                     <h1 class="hero-title">Akhil Indraganti</h1>
                     <p class="hero-subtitle">Research Assistant & Full-Stack AI Developer</p>
-                    <p class="hero-description">Master of Science in Information Science candidate with expertise in AI development, data science, and software engineering. Currently developing advanced AI systems for document analysis and collaborative research platforms.</p>
+                    <p class="hero-description">Master of Science in Information Science graduate with expertise in AI development, data science, and software engineering. Currently developing advanced AI systems for document analysis and collaborative research platforms.</p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn--primary">Get In Touch</a>
                         <a href="#experience" class="btn btn--outline">View Experience</a>
@@ -46,13 +22,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="hero-photo-container">
-                        <!-- Professional Photo Fallback since image file doesn't exist -->
-                        <div class="hero-photo-fallback">
-                            <div class="fallback-content">
-                                <div class="fallback-initials">AI</div>
-                                <div class="fallback-name">Akhil Indraganti</div>
-                            </div>
-                        </div>
+                        <img src="./P1180951_cropped.jpg" alt="Akhil Indraganti - Professional headshot" class="profile-photo">
                         <div class="hero-photo-border"></div>
                     </div>
                 </div>
@@ -65,8 +35,10 @@
         <div class="container">
             <h2 class="section-title">About</h2>
             <div class="about-content">
-                <p>I am a dedicated professional pursuing a Master of Science in Information Science at the University of North Texas, with a strong foundation in Electronics and Communication Engineering from VIT-AP University. My expertise spans full-stack AI development, data science, and software engineering, with particular focus on developing intelligent systems for document analysis and collaborative research platforms.</p>
-                <p>Currently serving as a Research Assistant and Full-Stack AI Developer, I specialize in building React/JavaScript frontends with advanced interactive features and Node.js/Express backends integrated with multiple LLM APIs. My work involves developing innovative solutions for scientific paper analysis, legal document processing, and financial report evaluation using cutting-edge AI technologies.</p>
+                <p>
+                I am a dedicated professional who has completed my Master of Science in Information Science at the University of North Texas, with a strong foundation in Electronics and Communication Engineering from VIT-AP University. My expertise spans full-stack AI development, data science, and software engineering, with particular focus on developing intelligent systems for document analysis and collaborative research platforms.</p>
+                <p>
+                Currently serving as a Research Assistant and Full-Stack AI Developer, I specialize in building React/JavaScript frontends with advanced interactive features and Node.js/Express backends integrated with multiple LLM APIs. My work involves developing innovative solutions for scientific paper analysis, legal document processing, and financial report evaluation using cutting-edge AI technologies.</p>
             </div>
         </div>
     </section>
@@ -100,249 +72,19 @@
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="card experience-card">
-                        <div class="card__body">
-                            <div class="experience-header">
-                                <h3>Research Assistant, Full-Stack AI Developer</h3>
-                                <div class="experience-meta">
-                                    <p class="experience-company">University of North Texas</p>
-                                    <p class="experience-location">Remote</p>
-                                    <p class="experience-duration">June 2025 – Present</p>
-                                </div>
-                            </div>
-                            <ul class="experience-responsibilities">
-                                <li>Build React/JavaScript frontend with real-time text selection, multi-round Q&A dialogs, and collaborative voting systems for scientific papers, legal documents, and financial reports.</li>
-                                <li>Develop Node.js/Express backend with OCR integration, RESTful APIs, database management (MongoDB/PostgreSQL), and community-driven ranking algorithms for user interactions.</li>
-                                <li>Integrate multiple LLM APIs (OpenAI, Hugging Face, Grok) with advanced prompt engineering, vector-based document retrieval, and RAG functionality for personalized conversation experiences.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="card experience-card">
-                        <div class="card__body">
-                            <div class="experience-header">
-                                <h3>Descriptive Metadata Writer</h3>
-                                <div class="experience-meta">
-                                    <p class="experience-company">University of North Texas</p>
-                                    <p class="experience-location">Denton, TX</p>
-                                    <p class="experience-duration">Jul 2024 – May 2025</p>
-                                </div>
-                            </div>
-                            <ul class="experience-responsibilities">
-                                <li>Crafted metadata descriptions for digitized items according to the modified Dublin Core standards established by the UNT Digital Libraries Division, including letters, memorandums, invoices, tax forms, and account statements; contributed to over 1,500 public records.</li>
-                                <li>Digitized cultural heritage materials using a FADGI compliant planetary scanner, ensuring archival quality and accessibility of historical documents.</li>
-                                <li>Completed quality control reviews of digital image metadata, file organization, and naming, maintaining accuracy and consistency across collections.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="card experience-card">
-                        <div class="card__body">
-                            <div class="experience-header">
-                                <h3>Software Engineer - I</h3>
-                                <div class="experience-meta">
-                                    <p class="experience-company">Visteon</p>
-                                    <p class="experience-location">Bangalore, India</p>
-                                    <p class="experience-duration">Jul 2022 – Jul 2023</p>
-                                </div>
-                            </div>
-                            <ul class="experience-responsibilities">
-                                <li>Enhanced system stability of Scania Driver Display Unit by identifying and fixing 10,000+ defects via static code analysis (Coverity), improving software reliability.</li>
-                                <li>Automated diagnostics and system tasks using Shell scripts across QNX/Linux environments, reducing manual overhead and improving efficiency.</li>
-                                <li>Collaborated in Agile teams using GitLab and C++ to deliver features for Visteon Adaptive Platform (VAP), supporting automotive-grade digital instrument clusters.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="card experience-card">
-                        <div class="card__body">
-                            <div class="experience-header">
-                                <h3>Internship</h3>
-                                <div class="experience-meta">
-                                    <p class="experience-company">Visteon</p>
-                                    <p class="experience-location">Remote</p>
-                                    <p class="experience-duration">Jan 2022 – Jun 2022</p>
-                                </div>
-                            </div>
-                            <ul class="experience-responsibilities">
-                                <li>Built a custom Linux distribution using Yocto and BitBake to enable Flutter UI on Raspberry Pi 3B+, reducing prototyping time for embedded platforms by 40%.</li>
-                                <li>Developed and optimized build scripts to integrate Flutter SDK and sample apps, streamlining deployment for embedded automotive systems.</li>
-                                <li>Deployed functional Flutter applications with DRM backend, accelerating UI validation for the Nissan P33 digital cockpit program.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="card project-card">
+            <div class="experience-grid">
+                <div class="card experience-card">
                     <div class="card__body">
-                        <h3>Metadata Quality Evaluation and Improvement for Digital Archives using LLMs</h3>
-                        <p class="project-duration">Jan 2025 – May 2025</p>
-                        <ul class="project-description">
-                            <li>Developed a pipeline using Python, Tesseract OCR, and LLaMA-4 for automated metadata generation and enrichment of over 400 historical documents.</li>
-                            <li>Implemented few-shot prompting to enhance archival records with Dublin Core fields, achieving a semantic similarity score of 0.83 against human-curated metadata.</li>
-                            <li>Evaluated AI-generated metadata using precision, recall, F1-score, and cosine similarity, demonstrating over 90% accuracy for structured fields and a 12% improvement in data consistency through post-processing.</li>
+                        <h3>Research Assistant & Full-Stack AI Developer</h3>
+                        <p class="experience-company">University of North Texas</p>
+                        <p class="experience-location">Denton, Texas</p>
+                        <p class="experience-duration">2023 – Present</p>
+                        <ul class="experience-responsibilities">
+                            <li>Developing advanced AI systems for document analysis and collaborative research platforms</li>
+                            <li>Building React/JavaScript frontends with interactive features</li>
+                            <li>Creating Node.js/Express backends integrated with multiple LLM APIs</li>
+                            <li>Implementing solutions for scientific paper analysis, legal documents, and financial reports</li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="card project-card">
-                    <div class="card__body">
-                        <h3>Public Transport Efficiency Analysis</h3>
-                        <p class="project-duration">Jan 2025 – May 2025</p>
-                        <ul class="project-description">
-                            <li>Architected a data analysis pipeline on GCP to assess Denton County Transportation Authority (DCTA) data and identify inefficiencies.</li>
-                            <li>Utilized OpenRefine for data cleansing, Hadoop and Spark on Dataproc for scalable processing, and BigQuery for warehousing and SQL-based insights.</li>
-                            <li>Benchmarked Spark as 4x faster than Hive for querying; visualized findings using Python (Pandas, Matplotlib) and delivered actionable recommendations.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card project-card">
-                    <div class="card__body">
-                        <h3>Restaurant Database Management System</h3>
-                        <p class="project-duration">Aug 2023 – Dec 2023</p>
-                        <ul class="project-description">
-                            <li>Designed a MySQL relational database modeling customers, employees, orders, menus, and transactions; created an ERD to enforce data integrity.</li>
-                            <li>Implemented role-based access, staff scheduling, and a loyalty program to streamline operations and enhance customer service.</li>
-                            <li>Authored complex SQL queries for business reporting such as daily revenue, reservation frequency, and top customer analytics.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card project-card">
-                    <div class="card__body">
-                        <h3>Speech Enhancement Using Deep Learning</h3>
-                        <p class="project-duration">Aug 2021 – Dec 2021</p>
-                        <ul class="project-description">
-                            <li>Developed source separation models in MATLAB and Python (Librosa, NumPy) to isolate vocal and instrumental tracks from mixed signals.</li>
-                            <li>Applied FFT and STFT techniques along with soft masking and neural filtering to enhance Music Information Retrieval (MIR) tasks.</li>
-                            <li>Generated clean .wav outputs and spectrograms, enabling applications like karaoke track creation and audio analysis.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Publications Section with Clickable Link -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="card publication-card">
-                <div class="card__body">
-                    <h3>Convolutional GRU Networks for Singing Voice Separation</h3>
-                    <p class="publication-venue">IEEE AISP 2022</p>
-                    <ul class="publication-description">
-                        <li>Analyzed and processed 20,000+ audio samples using Librosa, generating spectrogram features for deep learning-based source separation.</li>
-                        <li>Built and trained a CGRU-Net model in PyTorch, improving audio separation accuracy by up to 3 dB over U-Net baselines on iKala and MedleyDB datasets.</li>
-                        <li>Validated results with statistical metrics (NSDR, SDR, SIR, SAR) using mir eval, demonstrating strong generalization across music genres.</li>
-                    </ul>
-                    <div class="publication-actions">
-                        <a href="https://ieeexplore.ieee.org/document/9760616" target="_blank" rel="noopener noreferrer" class="btn btn--primary publication-link">
-                            <span class="publication-link-text">View Publication</span>
-                            <span class="publication-link-icon">→</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Languages</h4>
-                        <p>Python, R, JavaScript, TypeScript, SQL, HTML, CSS, C++, Shell (Bash)</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Frontend</h4>
-                        <p>React, React Native, HTML5, CSS3, JavaScript (ES6+), Responsive Design, UI/UX Design, Figma, Data Visualization</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Backend & APIs</h4>
-                        <p>Node.js, Express.js, Python (Flask, Django), REST APIs, WebSockets, ETL Pipelines</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Databases</h4>
-                        <p>PostgreSQL, MongoDB, MySQL, BigQuery, Data Modeling</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>AI, Data Science & Machine Learning</h4>
-                        <p>OpenAI APIs, Hugging Face Transformers, LLaMA, Prompt Engineering, Retrieval-Augmented Generation (RAG), Tesseract OCR, Scikit-learn, PyTorch, Pandas, NumPy, Feature Engineering, Regression, Clustering, Predictive Modeling, Data Mining, EDA, Statistical Modeling, Hypothesis Testing, Business Analytics, KPI Tracking, Data Storytelling</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Visualization & BI Tools</h4>
-                        <p>Tableau, Power BI, Matplotlib, Seaborn, Plotly, Dash, Looker, Google Data Studio, Advanced Excel, Data Presentation</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Cloud, Big Data & DevOps</h4>
-                        <p>Google Cloud Platform (GCP), Azure, Dataproc, Spark, Hadoop, Docker, CI/CD, Git, GitHub, Azure Boards, Data Warehousing, Data Architecture</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Data Engineering & Processing</h4>
-                        <p>OpenRefine, ETL, Data Wrangling, Data Pipelines, Batch Processing, Data Quality Validation</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Business & Analysis Tools</h4>
-                        <p>Requirements Gathering, Acceptance Criteria, Root Cause Analysis, Stakeholder Communication, Business Requirement Documentation</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Collaboration & Documentation</h4>
-                        <p>Google Drive, Outlook, Confluence, Slack, Jira</p>
-                    </div>
-                </div>
-
-                <div class="card skill-card">
-                    <div class="card__body">
-                        <h4>Key Practices</h4>
-                        <p>Cross-functional Collaboration, Agile/Scrum, Code Review, User Story Writing, Prioritization, Reporting, Presentation Skills, Analytical Thinking, Problem Solving</p>
                     </div>
                 </div>
             </div>
@@ -354,29 +96,15 @@
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <p><a href="mailto:akhilindraganti27@gmail.com">akhilindraganti27@gmail.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Phone</h4>
-                        <p><a href="tel:940.843.9097">940.843.9097</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://linkedin.com/in/akhil-indraganti" target="_blank">linkedin.com/in/akhil-indraganti</a></p>
-                    </div>
+                <p>Let's connect and discuss opportunities in AI development, data science, and software engineering.</p>
+                <div class="contact-links">
+                    <a href="mailto:akhil@example.com" class="btn btn--outline">Email Me</a>
+                    <a href="https://linkedin.com/in/akhilindraganti" class="btn btn--outline">LinkedIn</a>
+                    <a href="https://github.com/akhil27" class="btn btn--outline">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Akhil Indraganti. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script src="app.js"></script>
 </body>
