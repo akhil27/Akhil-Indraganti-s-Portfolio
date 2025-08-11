@@ -1,0 +1,31 @@
+:root {
+  --duration-normal: 0.2s;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d9d9d9;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.hero {
+  padding: 1.5rem 1rem;
+}
