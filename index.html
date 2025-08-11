@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhil Indraganti - Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Akhil Indraganti - AI Developer & Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Fixed Header Navigation -->
@@ -31,29 +31,62 @@
         </nav>
     </header>
 
-    <!-- Enhanced Hero Section with Photo -->
+    <!-- Enhanced Hero Section with Professional Photo -->
     <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status status--success">Available for Opportunities</span>
+                    </div>
                     <h1 class="hero-title">Akhil Indraganti</h1>
                     <p class="hero-subtitle">Research Assistant & Full-Stack AI Developer</p>
-                    <p class="hero-description">Master of Science in Information Science candidate with expertise in AI development, data science, and software engineering. Currently developing advanced AI systems for document analysis and collaborative research platforms.</p>
+                    <p class="hero-description">Master of Science in Information Science candidate with expertise in AI development, data science, and software engineering. Currently developing advanced AI systems for document analysis and collaborative research platforms using cutting-edge LLM technologies.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1500+</span>
+                            <span class="stat-label">Records Processed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20K+</span>
+                            <span class="stat-label">Audio Samples</span>
+                        </div>
+                    </div>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn--primary">Get In Touch</a>
-                        <a href="#experience" class="btn btn--outline">View Experience</a>
+                        <a href="#contact" class="btn btn--primary">
+                            <span>Get In Touch</span>
+                            <div class="btn-shine"></div>
+                        </a>
+                        <a href="#experience" class="btn btn--outline">
+                            <span>View Experience</span>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="hero-photo-container">
-                        <!-- Professional Photo Fallback since image file doesn't exist -->
-                        <div class="hero-photo-fallback">
-                            <div class="fallback-content">
-                                <div class="fallback-initials">AI</div>
-                                <div class="fallback-name">Akhil Indraganti</div>
+                        <div class="photo-glow"></div>
+                        <!-- Professional Photo with Enhanced Fallback -->
+                        <div class="hero-photo-wrapper">
+                            <img src="P1180951_cropped.jpg" alt="Akhil Indraganti - Professional Photo" class="hero-photo" loading="eager" style="display: none;">
+                            <div class="hero-photo-fallback">
+                                <div class="fallback-content">
+                                    <div class="fallback-initials">AI</div>
+                                    <div class="fallback-name">Akhil Indraganti</div>
+                                    <div class="fallback-title">AI Developer</div>
+                                </div>
                             </div>
                         </div>
                         <div class="hero-photo-border"></div>
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="2">AI</div>
+                            <div class="floating-element" data-speed="1.5">ML</div>
+                            <div class="floating-element" data-speed="2.5">Data</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,8 +98,23 @@
         <div class="container">
             <h2 class="section-title">About</h2>
             <div class="about-content">
-                <p>I am a dedicated professional pursuing a Master of Science in Information Science at the University of North Texas, with a strong foundation in Electronics and Communication Engineering from VIT-AP University. My expertise spans full-stack AI development, data science, and software engineering, with particular focus on developing intelligent systems for document analysis and collaborative research platforms.</p>
-                <p>Currently serving as a Research Assistant and Full-Stack AI Developer, I specialize in building React/JavaScript frontends with advanced interactive features and Node.js/Express backends integrated with multiple LLM APIs. My work involves developing innovative solutions for scientific paper analysis, legal document processing, and financial report evaluation using cutting-edge AI technologies.</p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="about-intro">I am a dedicated professional pursuing a Master of Science in Information Science at the University of North Texas, with a strong foundation in Electronics and Communication Engineering from VIT-AP University.</p>
+                        <p>My expertise spans full-stack AI development, data science, and software engineering, with particular focus on developing intelligent systems for document analysis and collaborative research platforms. Currently serving as a Research Assistant and Full-Stack AI Developer, I specialize in building React/JavaScript frontends with advanced interactive features and Node.js/Express backends integrated with multiple LLM APIs.</p>
+                        <p>My work involves developing innovative solutions for scientific paper analysis, legal document processing, and financial report evaluation using cutting-edge AI technologies including OpenAI, Hugging Face, and advanced prompt engineering techniques.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <h3>Key Achievements</h3>
+                        <ul class="achievement-list">
+                            <li>Published IEEE research on Convolutional GRU Networks</li>
+                            <li>Enhanced software stability by fixing 10,000+ defects</li>
+                            <li>Contributed to 1,500+ public digital archive records</li>
+                            <li>Reduced prototyping time by 40% using custom Linux distribution</li>
+                            <li>Achieved 90% accuracy in AI-generated metadata</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -77,19 +125,31 @@
             <h2 class="section-title">Education</h2>
             <div class="education-grid">
                 <div class="card education-card">
+                    <div class="card-icon">🎓</div>
                     <div class="card__body">
                         <h3>Master of Science in Information Science</h3>
                         <p class="education-institution">University of North Texas</p>
                         <p class="education-location">Denton, Texas</p>
                         <p class="education-duration">2023 – 2025</p>
+                        <div class="education-focus">
+                            <span class="focus-tag">AI Development</span>
+                            <span class="focus-tag">Data Science</span>
+                            <span class="focus-tag">Machine Learning</span>
+                        </div>
                     </div>
                 </div>
                 <div class="card education-card">
+                    <div class="card-icon">🔧</div>
                     <div class="card__body">
                         <h3>Bachelor of Technology in Electronics And Communication Engineering</h3>
                         <p class="education-institution">VIT-AP University</p>
                         <p class="education-location">Amaravati</p>
                         <p class="education-duration">2018 – 2022</p>
+                        <div class="education-focus">
+                            <span class="focus-tag">Software Engineering</span>
+                            <span class="focus-tag">Signal Processing</span>
+                            <span class="focus-tag">Embedded Systems</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,6 +162,7 @@
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
+                    <div class="timeline-icon">🚀</div>
                     <div class="card experience-card">
                         <div class="card__body">
                             <div class="experience-header">
@@ -122,6 +183,7 @@
                 </div>
 
                 <div class="timeline-item">
+                    <div class="timeline-icon">📚</div>
                     <div class="card experience-card">
                         <div class="card__body">
                             <div class="experience-header">
@@ -142,6 +204,7 @@
                 </div>
 
                 <div class="timeline-item">
+                    <div class="timeline-icon">💻</div>
                     <div class="card experience-card">
                         <div class="card__body">
                             <div class="experience-header">
@@ -162,6 +225,7 @@
                 </div>
 
                 <div class="timeline-item">
+                    <div class="timeline-icon">⚡</div>
                     <div class="card experience-card">
                         <div class="card__body">
                             <div class="experience-header">
@@ -190,6 +254,7 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="card project-card">
+                    <div class="project-icon">🤖</div>
                     <div class="card__body">
                         <h3>Metadata Quality Evaluation and Improvement for Digital Archives using LLMs</h3>
                         <p class="project-duration">Jan 2025 – May 2025</p>
@@ -198,10 +263,16 @@
                             <li>Implemented few-shot prompting to enhance archival records with Dublin Core fields, achieving a semantic similarity score of 0.83 against human-curated metadata.</li>
                             <li>Evaluated AI-generated metadata using precision, recall, F1-score, and cosine similarity, demonstrating over 90% accuracy for structured fields and a 12% improvement in data consistency through post-processing.</li>
                         </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LLaMA-4</span>
+                            <span class="tech-tag">OCR</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card project-card">
+                    <div class="project-icon">🚌</div>
                     <div class="card__body">
                         <h3>Public Transport Efficiency Analysis</h3>
                         <p class="project-duration">Jan 2025 – May 2025</p>
@@ -210,10 +281,16 @@
                             <li>Utilized OpenRefine for data cleansing, Hadoop and Spark on Dataproc for scalable processing, and BigQuery for warehousing and SQL-based insights.</li>
                             <li>Benchmarked Spark as 4x faster than Hive for querying; visualized findings using Python (Pandas, Matplotlib) and delivered actionable recommendations.</li>
                         </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">BigQuery</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card project-card">
+                    <div class="project-icon">🍽️</div>
                     <div class="card__body">
                         <h3>Restaurant Database Management System</h3>
                         <p class="project-duration">Aug 2023 – Dec 2023</p>
@@ -222,10 +299,16 @@
                             <li>Implemented role-based access, staff scheduling, and a loyalty program to streamline operations and enhance customer service.</li>
                             <li>Authored complex SQL queries for business reporting such as daily revenue, reservation frequency, and top customer analytics.</li>
                         </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Database Design</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card project-card">
+                    <div class="project-icon">🎵</div>
                     <div class="card__body">
                         <h3>Speech Enhancement Using Deep Learning</h3>
                         <p class="project-duration">Aug 2021 – Dec 2021</p>
@@ -234,18 +317,27 @@
                             <li>Applied FFT and STFT techniques along with soft masking and neural filtering to enhance Music Information Retrieval (MIR) tasks.</li>
                             <li>Generated clean .wav outputs and spectrograms, enabling applications like karaoke track creation and audio analysis.</li>
                         </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Audio Processing</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Enhanced Publications Section with Clickable Link -->
+    <!-- Enhanced Publications Section -->
     <section id="publications" class="section">
         <div class="container">
             <h2 class="section-title">Publications</h2>
             <div class="card publication-card">
+                <div class="publication-icon">📄</div>
                 <div class="card__body">
+                    <div class="publication-badge">
+                        <span class="status status--success">Peer Reviewed</span>
+                    </div>
                     <h3>Convolutional GRU Networks for Singing Voice Separation</h3>
                     <p class="publication-venue">IEEE AISP 2022</p>
                     <ul class="publication-description">
@@ -254,10 +346,10 @@
                         <li>Validated results with statistical metrics (NSDR, SDR, SIR, SAR) using mir eval, demonstrating strong generalization across music genres.</li>
                     </ul>
                     <div class="publication-actions">
-                        <a href="https://ieeexplore.ieee.org/document/9760616" target="_blank" rel="noopener noreferrer" class="btn btn--primary publication-link">
+                        <button class="btn btn--primary publication-link" onclick="window.open('https://ieeexplore.ieee.org/document/9760616', '_blank')">
                             <span class="publication-link-text">View Publication</span>
                             <span class="publication-link-icon">→</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -270,6 +362,7 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="card skill-card">
+                    <div class="skill-icon">💻</div>
                     <div class="card__body">
                         <h4>Languages</h4>
                         <p>Python, R, JavaScript, TypeScript, SQL, HTML, CSS, C++, Shell (Bash)</p>
@@ -277,6 +370,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">🎨</div>
                     <div class="card__body">
                         <h4>Frontend</h4>
                         <p>React, React Native, HTML5, CSS3, JavaScript (ES6+), Responsive Design, UI/UX Design, Figma, Data Visualization</p>
@@ -284,6 +378,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">⚙️</div>
                     <div class="card__body">
                         <h4>Backend & APIs</h4>
                         <p>Node.js, Express.js, Python (Flask, Django), REST APIs, WebSockets, ETL Pipelines</p>
@@ -291,6 +386,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">🗄️</div>
                     <div class="card__body">
                         <h4>Databases</h4>
                         <p>PostgreSQL, MongoDB, MySQL, BigQuery, Data Modeling</p>
@@ -298,6 +394,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">🤖</div>
                     <div class="card__body">
                         <h4>AI, Data Science & Machine Learning</h4>
                         <p>OpenAI APIs, Hugging Face Transformers, LLaMA, Prompt Engineering, Retrieval-Augmented Generation (RAG), Tesseract OCR, Scikit-learn, PyTorch, Pandas, NumPy, Feature Engineering, Regression, Clustering, Predictive Modeling, Data Mining, EDA, Statistical Modeling, Hypothesis Testing, Business Analytics, KPI Tracking, Data Storytelling</p>
@@ -305,6 +402,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">📊</div>
                     <div class="card__body">
                         <h4>Visualization & BI Tools</h4>
                         <p>Tableau, Power BI, Matplotlib, Seaborn, Plotly, Dash, Looker, Google Data Studio, Advanced Excel, Data Presentation</p>
@@ -312,6 +410,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">☁️</div>
                     <div class="card__body">
                         <h4>Cloud, Big Data & DevOps</h4>
                         <p>Google Cloud Platform (GCP), Azure, Dataproc, Spark, Hadoop, Docker, CI/CD, Git, GitHub, Azure Boards, Data Warehousing, Data Architecture</p>
@@ -319,6 +418,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">🔧</div>
                     <div class="card__body">
                         <h4>Data Engineering & Processing</h4>
                         <p>OpenRefine, ETL, Data Wrangling, Data Pipelines, Batch Processing, Data Quality Validation</p>
@@ -326,6 +426,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">📋</div>
                     <div class="card__body">
                         <h4>Business & Analysis Tools</h4>
                         <p>Requirements Gathering, Acceptance Criteria, Root Cause Analysis, Stakeholder Communication, Business Requirement Documentation</p>
@@ -333,6 +434,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">🤝</div>
                     <div class="card__body">
                         <h4>Collaboration & Documentation</h4>
                         <p>Google Drive, Outlook, Confluence, Slack, Jira</p>
@@ -340,6 +442,7 @@
                 </div>
 
                 <div class="card skill-card">
+                    <div class="skill-icon">🎯</div>
                     <div class="card__body">
                         <h4>Key Practices</h4>
                         <p>Cross-functional Collaboration, Agile/Scrum, Code Review, User Story Writing, Prioritization, Reporting, Presentation Skills, Analytical Thinking, Problem Solving</p>
@@ -352,20 +455,32 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
+                <div class="contact-intro">
+                    <p>Ready to collaborate on innovative AI projects or discuss opportunities in data science and software engineering? I'd love to hear from you!</p>
+                </div>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h4>Email</h4>
-                        <p><a href="mailto:akhilindraganti27@gmail.com">akhilindraganti27@gmail.com</a></p>
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:akhilindraganti27@gmail.com">akhilindraganti27@gmail.com</a></p>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <h4>Phone</h4>
-                        <p><a href="tel:940.843.9097">940.843.9097</a></p>
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:940.843.9097">940.843.9097</a></p>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://linkedin.com/in/akhil-indraganti" target="_blank">linkedin.com/in/akhil-indraganti</a></p>
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/akhil-indraganti" target="_blank">linkedin.com/in/akhil-indraganti</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,7 +489,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Akhil Indraganti. All rights reserved.</p>
+            <p>&copy; 2025 Akhil Indraganti. All rights reserved. Built with passion for AI and innovation.</p>
         </div>
     </footer>
 
