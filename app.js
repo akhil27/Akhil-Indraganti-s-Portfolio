@@ -154,24 +154,30 @@ document.addEventListener('DOMContentLoaded', function() {
             updateCounter();
         }
         
+        // Define observerOptions here for stats
+        const statsObserverOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+        
         // Trigger counter animation when stats come into view
-const statsObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const statNumbers = entry.target.querySelectorAll('.stat-number');
-            statNumbers.forEach((stat, index) => {
-                // Extract the target number from the HTML content
-                const currentText = stat.textContent;
-                const targetNumber = parseInt(currentText.replace('+', ''));
-                
-                setTimeout(() => {
-                    animateCounter(stat, targetNumber);
-                }, index * 200);
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach((stat, index) => {
+                        // Extract the target number from the HTML content
+                        const currentText = stat.textContent;
+                        const targetNumber = parseInt(currentText.replace('+', ''));
+                        
+                        setTimeout(() => {
+                            animateCounter(stat, targetNumber);
+                        }, index * 200);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
             });
-            statsObserver.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+        }, statsObserverOptions);
         
         const heroStatsSection = document.querySelector('.hero-stats');
         if (heroStatsSection) {
