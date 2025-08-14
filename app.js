@@ -155,25 +155,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Trigger counter animation when stats come into view
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px'
-        };
-        
-        const statsObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const statNumbers = entry.target.querySelectorAll('.stat-number');
-                    statNumbers.forEach((stat, index) => {
-                        const targets = [3, 1500, 20000]; // 3+, 1500+, 20K+
-                        setTimeout(() => {
-                            animateCounter(stat, targets[index]);
-                        }, index * 200);
-                    });
-                    statsObserver.unobserve(entry.target);
-                }
+const statsObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach((stat, index) => {
+                // Extract the target number from the HTML content
+                const currentText = stat.textContent;
+                const targetNumber = parseInt(currentText.replace('+', ''));
+                
+                setTimeout(() => {
+                    animateCounter(stat, targetNumber);
+                }, index * 200);
             });
-        }, observerOptions);
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
         
         const heroStatsSection = document.querySelector('.hero-stats');
         if (heroStatsSection) {
