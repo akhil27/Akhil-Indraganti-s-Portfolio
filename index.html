@@ -90,7 +90,7 @@
                 <div class="card education-card">
                     <div class="card-icon">🎓</div>
                     <div class="card__body">
-                        <h3>Master of Science in Information Science</h3>
+                        <h3>Master of Science in Information Science/Information Systems</h3>
                         <p class="education-institution">University of North Texas</p>
                         <p class="education-location">Denton, Texas</p>
                         <p class="education-duration">2023 – 2025</p>
@@ -119,18 +119,19 @@
                     <div class="card experience-card">
                         <div class="card__body">
                             <div class="experience-header">
-                                <h3>Research Assistant / Full Stack AI Developer</h3>
+                                <h3>Research Assistant - SynergeReader Project</h3>
                                 <div class="experience-meta">
-                                    <p class="experience-company">University of North Texas - SynergeReader Project</p>
+                                    <p class="experience-company">University of North Texas</p>
                                     <p class="experience-location">Remote</p>
                                     <p class="experience-duration">July 2025 – Present</p>
                                 </div>
                             </div>
                             <ul class="experience-responsibilities">
-                                <li>Engineered a high-performance React and TypeScript frontend with real-time AI confidence visualizations, resulting in a 40% reduction in manual data processing time.</li>
-                                <li>Architected a FastAPI backend integrated with LangChain to automate document classification, processing 1M+ research records with high accuracy.</li>
-                                <li>Eliminated data retrieval bottlenecks by implementing a PostgreSQL schema with B-Tree indexing and materialized views, achieving sub-second search latency.</li>
+                                <li>Engineered a high-performance React and TypeScript frontend with real-time AI confidence visualizations, resulting in a 40% reduction in manual data processing time for research teams.</li>
+                                <li>Architected a FastAPI backend integrated with LangChain to automate document classification, processing 1M+ research records with high accuracy and minimal manual intervention.</li>
+                                <li>Eliminated data retrieval bottlenecks by implementing a PostgreSQL schema with B-Tree indexing and materialized views, achieving sub-second search latency across massive datasets.</li>
                                 <li>Streamlined the software delivery lifecycle by building CI/CD pipelines via GitHub Actions and Docker, reducing environment configuration errors and accelerating feature velocity by 30%.</li>
+                                <li>Designed and implemented RESTful APIs to bridge Large Language Models (LLMs) with the web client, ensuring secure, OpenAPI-documented data flow for sensitive academic research.</li>
                                 <li>Enhanced system reliability by implementing a comprehensive unit and integration testing suite, proactively identifying and resolving edge-case bugs before production staging.</li>
                             </ul>
                         </div>
@@ -151,10 +152,11 @@
                             </div>
                             <ul class="experience-responsibilities">
                                 <li>Redesigned the frontend architecture of institutional archival tools using React and Vite, which improved page load speeds by 25% and ensured 100% accessibility compliance.</li>
-                                <li>Developed Node.js automation services to handle large-scale metadata migration between SQL and NoSQL environments, eliminating data entry duplication.</li>
+                                <li>Developed Node.js automation services to handle large-scale metadata migration between SQL and NoSQL environments, eliminating data entry duplication and improving archival accuracy.</li>
                                 <li>Resolved critical cross-browser compatibility and state-sync issues by implementing the React Context API, ensuring a consistent user experience for over 5,000 university users.</li>
                                 <li>Integrated MongoDB for unstructured data storage, allowing the platform to dynamically scale and support diverse archival formats without requiring complex schema redesigns.</li>
-                                <li>Spearheaded GitFlow version control workflows and documentation efforts, reducing onboarding time for new student developers by 50%.</li>
+                                <li>Spearheaded GitFlow version control workflows and documentation efforts, reducing onboarding time for new student developers by 50% through standardized coding practices.</li>
+                                <li>Partnered with designers to translate high-fidelity mockups into reusable JavaScript/CSS3 components, adhering to modern UI/UX principles and mobile-first design standards.</li>
                             </ul>
                         </div>
                     </div>
@@ -175,9 +177,10 @@
                             <ul class="experience-responsibilities">
                                 <li>Decomposed a monolithic telemetry platform into Java (Spring Boot) microservices, increasing system throughput to handle real-time data from millions of connected devices.</li>
                                 <li>Migrated compute-heavy background tasks to a Serverless architecture on AWS Lambda, resulting in a 15% reduction in monthly cloud infrastructure costs.</li>
-                                <li>Authored and optimized GraphQL schemas for frontend consumption, reducing network payload sizes by 60% and improving responsiveness on low-bandwidth networks.</li>
+                                <li>Authored and optimized GraphQL schemas for frontend consumption, reducing network payload sizes by 60% and improving application responsiveness on low-bandwidth networks.</li>
                                 <li>Solved production performance issues by troubleshooting AWS EC2 compute bottlenecks and optimizing SQL execution plans for high-concurrency environments.</li>
                                 <li>Secured sensitive automotive telemetry by implementing OAuth2/JWT protocols and AWS IAM roles, ensuring 100% compliance with global enterprise security standards.</li>
+                                <li>Implemented an ElastiCache (Redis) layer to cache frequently accessed telemetry metrics, reducing database load and improving system-wide data retrieval speeds.</li>
                             </ul>
                         </div>
                     </div>
@@ -194,17 +197,16 @@
                 <div class="card project-card" style="margin: 0 auto; max-width: 800px;">
                     <div class="project-icon">🤖</div>
                     <div class="card__body">
-                        <h3>Metadata Quality Evaluation and Improvement using LLMs</h3>
+                        <h3>Metadata Quality Evaluation and Improvement for Digital Archives using LLMs</h3>
                         <ul class="project-description">
                             <li>Developed a pipeline using Python, Tesseract OCR, and LLaMA-4 for automated metadata generation and enrichment of over 400 historical documents.</li>
                             <li>Implemented few-shot prompting to enhance archival records with Dublin Core fields, achieving a semantic similarity score of 0.83 against human-curated metadata.</li>
-                            <li>Evaluated AI-generated metadata using precision, recall, F1-score, and cosine similarity, demonstrating over 90% accuracy for structured fields.</li>
+                            <li>Evaluated AI-generated metadata using precision, recall, F1-score, and cosine similarity, demonstrating over 90% accuracy for structured fields and a 12% improvement in data consistency through post-processing.</li>
                         </ul>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">LLaMA-4</span>
                             <span class="tech-tag">OCR</span>
-                            <span class="tech-tag">NLP</span>
                         </div>
                         <div class="project-actions" style="margin-top: 1.5rem;">
                             <a href="https://github.com/akhil27/Metadata-Quality-Evaluation-and-Improvement-for-Digital-Archives-using-LLMs/tree/main" target="_blank" class="btn btn--outline" style="text-decoration: none; display: inline-block;">
@@ -225,32 +227,48 @@
                 <div class="card skill-card">
                     <div class="skill-icon">🎨</div>
                     <div class="card__body">
-                        <h4>Frontend Development</h4>
-                        <p>React.js, TypeScript, JavaScript (ES6+), Vite, HTML5/CSS3, React Context API, UI/UX Principles</p>
+                        <h4>Frontend Technologies</h4>
+                        <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Angular, Vue.js, Responsive Design</p>
                     </div>
                 </div>
 
                 <div class="card skill-card">
-                    <div class="skill-icon">🤖</div>
+                    <div class="skill-icon">🛠️</div>
                     <div class="card__body">
-                        <h4>Backend & AI</h4>
-                        <p>Python, FastAPI, Node.js, Java (Spring Boot), LangChain, LLM Integration, GraphQL, RESTful APIs</p>
+                        <h4>Frontend Tooling</h4>
+                        <p>Vite, Webpack, npm, yarn, Redux, React Context, Tailwind CSS, Bootstrap</p>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <div class="card__body">
+                        <h4>Backend Technologies</h4>
+                        <p>Python (FastAPI, Django, Flask), JavaScript (Node.js), Java (Spring Boot), C#, Go</p>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="card__body">
+                        <h4>APIs & Databases</h4>
+                        <p>RESTful APIs, GraphQL, API Security (JWT/OAuth), PostgreSQL, MySQL, MongoDB, DynamoDB</p>
                     </div>
                 </div>
 
                 <div class="card skill-card">
                     <div class="skill-icon">☁️</div>
                     <div class="card__body">
-                        <h4>Cloud & Data</h4>
-                        <p>AWS (Lambda, EC2, IAM), PostgreSQL, MongoDB, Redis, Docker, CI/CD (GitHub Actions), OAuth2/JWT</p>
+                        <h4>Cloud & DevOps</h4>
+                        <p>AWS (EC2, S3), GCP, Azure, Docker, Kubernetes, GitHub Actions, CI/CD, Git</p>
                     </div>
                 </div>
 
                 <div class="card skill-card">
                     <div class="skill-icon">⚙️</div>
                     <div class="card__body">
-                        <h4>Core Engineering</h4>
-                        <p>Microservices Architecture, Distributed Systems, System Design, Unit/Integration Testing, Agile/Scrum</p>
+                        <h4>Practices & Systems</h4>
+                        <p>Agile/Scrum, System Design, Microservices, Serverless, Unit/Integration Testing</p>
                     </div>
                 </div>
                 
